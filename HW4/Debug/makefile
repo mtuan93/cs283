@@ -23,19 +23,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: Anagram
+all: HW4
 
 # Tool invocations
-Anagram: $(OBJS) $(USER_OBJS)
+HW4: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C Linker'
-	gcc  -o "Anagram" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc  -o "HW4" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Anagram
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) HW4
 	-@echo ' '
 
 .PHONY: all clean dependents

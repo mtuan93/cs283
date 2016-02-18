@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/anagram.c \
-../src/dict.c 
+../src/csapp.c \
+../src/problem1.c \
+../src/problem2.c 
 
 OBJS += \
-./src/anagram.o \
-./src/dict.o 
+./src/csapp.o \
+./src/problem1.o \
+./src/problem2.o 
 
 C_DEPS += \
-./src/anagram.d \
-./src/dict.d 
+./src/csapp.d \
+./src/problem1.d \
+./src/problem2.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
